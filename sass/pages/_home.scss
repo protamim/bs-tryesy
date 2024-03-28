@@ -19,6 +19,13 @@ header {
       line-height: 94px; /* 117.5% */
       letter-spacing: -1.6px;
       margin-bottom: 2.5rem;
+
+      & {
+        @media screen and (max-width: 768px) {
+            font-size: 58px;
+            line-height: 77px;
+        }
+      }
     }
     //   subtitle
     .subtitle {
@@ -102,15 +109,14 @@ header {
       bottom: -32%;
       right: 4%;
       z-index: 20;
-      
     }
     //   banner shadow
     .banner-shadow {
       width: 900px;
       height: 900px;
       position: absolute;
-      bottom: -81%;
-      right: -27%;
+      bottom: -169%;
+      right: -33%;
       z-index: -1;
       border-radius: 900px;
       background: rgba(109, 97, 255, 0.4);
@@ -325,8 +331,7 @@ header {
 
 // Home page Portfolios
 .home-portfolios {
-    margin-bottom: 8.75rem;
-    
+  margin-bottom: 8.75rem;
 
   .bold-slogan {
     display: flex;

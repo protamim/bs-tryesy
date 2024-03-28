@@ -12004,6 +12004,7 @@ img {
   top: 110%;
   left: -120%;
   width: 100%;
+  z-index: 99;
   transition: all 300ms ease-in-out;
 }
 .home-navbar .mobile-menu .slide-nav .nav-wrapper {
@@ -12103,6 +12104,12 @@ header .banner-top .header-title {
   letter-spacing: -1.6px;
   margin-bottom: 2.5rem;
 }
+@media screen and (max-width: 768px) {
+  header .banner-top .header-title {
+    font-size: 58px;
+    line-height: 77px;
+  }
+}
 header .banner-top .subtitle {
   color: #b4b7be;
   font-size: 20px;
@@ -12180,8 +12187,8 @@ header .banner-top .banner-shadow {
   width: 900px;
   height: 900px;
   position: absolute;
-  bottom: -81%;
-  right: -27%;
+  bottom: -169%;
+  right: -33%;
   z-index: -1;
   border-radius: 900px;
   background: rgba(109, 97, 255, 0.4);
