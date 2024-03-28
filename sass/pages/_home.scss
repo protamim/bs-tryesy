@@ -22,8 +22,8 @@ header {
 
       & {
         @media screen and (max-width: 768px) {
-            font-size: 58px;
-            line-height: 77px;
+          font-size: 58px;
+          line-height: 77px;
         }
       }
     }
@@ -244,6 +244,12 @@ header {
 .home-about {
   margin-bottom: 8.75rem;
 
+  & {
+    @media screen and (max-width: 768px) {
+      margin-bottom: calc(8.75rem / 2);
+    }
+  }
+
   .about-left {
     img {
       max-width: 440px;
@@ -291,6 +297,10 @@ header {
         margin-bottom: 30px;
       }
 
+      p {
+        max-width: 565px;
+      }
+
       .features {
         margin-top: 2.6rem;
         row-gap: 1.7rem;
@@ -333,14 +343,50 @@ header {
 .home-portfolios {
   margin-bottom: 8.75rem;
 
+  @media screen and (min-width: 1200px) {
+    .row > * {
+      padding-left: 0;
+      padding-right: 0.2rem;
+    }
+  }
+
+  .portfolio {
+    position: relative;
+
+    &:hover > .hover-card {
+      bottom: 5%;
+      visibility: visible;
+    }
+    .hover-card {
+      max-width: 320px;
+      max-height: 100px;
+      left: 8%;
+      bottom: -35%;
+      padding: 1.6rem;
+      transition: all 300ms ease-in-out;
+      visibility: hidden;
+
+      h5 {
+        color: $body-color;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.6px;
+      }
+
+    }
+  }
+
   .bold-slogan {
     display: flex;
     align-items: center;
     height: 9.375rem;
+    margin-bottom: 60px;
 
     h3 {
       color: $white-color;
-      font-size: 140px;
+      font-size: 8.75rem;
       font-style: normal;
       font-weight: 800;
       line-height: 64px;
@@ -348,6 +394,11 @@ header {
       text-transform: uppercase;
       text-wrap: nowrap;
       opacity: 0.06;
+      & {
+        @media screen and (max-width: 768px) {
+          font-size: calc(8.75rem / 2);
+        }
+      }
     }
   }
 }

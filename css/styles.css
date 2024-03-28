@@ -11903,6 +11903,12 @@ img {
   padding-right: 0.75rem;
 }
 
+.portfolio-container {
+  max-width: 123.75rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .bordered-btn {
   display: inline-flex;
   padding: 19px 30px;
@@ -12296,6 +12302,11 @@ header .sub-line .lists-wrapper li::marker {
 .home-about {
   margin-bottom: 8.75rem;
 }
+@media screen and (max-width: 768px) {
+  .home-about {
+    margin-bottom: 4.375rem;
+  }
+}
 .home-about .about-left img {
   max-width: 440px;
   max-height: 570px;
@@ -12334,6 +12345,9 @@ header .sub-line .lists-wrapper li::marker {
 .home-about .about-right .content-wrapper .content-title {
   margin-bottom: 30px;
 }
+.home-about .about-right .content-wrapper p {
+  max-width: 565px;
+}
 .home-about .about-right .content-wrapper .features {
   margin-top: 2.6rem;
   row-gap: 1.7rem;
@@ -12368,14 +12382,45 @@ header .sub-line .lists-wrapper li::marker {
 .home-portfolios {
   margin-bottom: 8.75rem;
 }
+@media screen and (min-width: 1200px) {
+  .home-portfolios .row > * {
+    padding-left: 0;
+    padding-right: 0.2rem;
+  }
+}
+.home-portfolios .portfolio {
+  position: relative;
+}
+.home-portfolios .portfolio:hover > .hover-card {
+  bottom: 5%;
+  visibility: visible;
+}
+.home-portfolios .portfolio .hover-card {
+  max-width: 320px;
+  max-height: 100px;
+  left: 8%;
+  bottom: -35%;
+  padding: 1.6rem;
+  transition: all 300ms ease-in-out;
+  visibility: hidden;
+}
+.home-portfolios .portfolio .hover-card h5, .home-portfolios .portfolio .hover-card .h5 {
+  color: #141820;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.6px;
+}
 .home-portfolios .bold-slogan {
   display: flex;
   align-items: center;
   height: 9.375rem;
+  margin-bottom: 60px;
 }
 .home-portfolios .bold-slogan h3, .home-portfolios .bold-slogan .h3 {
   color: #FFFFFF;
-  font-size: 140px;
+  font-size: 8.75rem;
   font-style: normal;
   font-weight: 800;
   line-height: 64px;
@@ -12383,6 +12428,11 @@ header .sub-line .lists-wrapper li::marker {
   text-transform: uppercase;
   text-wrap: nowrap;
   opacity: 0.06;
+}
+@media screen and (max-width: 768px) {
+  .home-portfolios .bold-slogan h3, .home-portfolios .bold-slogan .h3 {
+    font-size: 4.375rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
